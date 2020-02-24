@@ -229,7 +229,8 @@ public class VentaControl implements Initializable {
     
     @FXML void actionProducto() {
         try {
-            String producto = String.valueOf(cbProduct.getSelectionModel(). getSelectedItem());
+            String producto = String.valueOf(
+                    cbProduct.getSelectionModel().getSelectedItem());
         int productP = producto.indexOf("-")-1;
         if(producto.isEmpty()){
             producto = "0";
